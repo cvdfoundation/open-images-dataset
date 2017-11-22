@@ -20,7 +20,7 @@ You can either download the images to a storage bucket or a local directory with
 The target_dir can be a local directory or a Google Cloud storage bucket.
 
 ## Download Full Dataset With Google Storage Transfer
-**Prerequisite: Google Cloud Platform Account**
+**Prerequisite: Google Cloud Platform account**
 
 In this section, we describe the procedures to download all images in the Open Images Dataset to a Google Cloud storage bucket. We recommend to use the user interface provided in the Google Cloud storage console for the task.
 
