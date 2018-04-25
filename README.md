@@ -6,14 +6,14 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 ## Download Images With Bounding Boxes Annotations
 **Prerequisite: Gmail or Gmail associated account**
 
-CVDF hosts 1.76M image files that have bounding boxes annotations in Open Images Dataset V3 data. The images are split into train (1,592,089), validation (41,620), and test (125,436) sets. The images are rescaled to 1024x768 resolution with total size 515GB. The images can be directly downloaded into a local directory or a [Google Cloud storage bucket](https://cloud.google.com/storage/transfer/create-manage-transfer-console). Please sign up with your Gmail or Gmail asscociated account [here](http://www.cvdfoundation.org/datasets/open-images-dataset/signup.html) to request access. After you submit the request form, we will grant READ access to your mail account for the storage bucket:
+CVDF hosts 1.91M image files that have bounding boxes annotations in Open Images Dataset V4 data. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory or a [Google Cloud storage bucket](https://cloud.google.com/storage/transfer/create-manage-transfer-console). Please sign up with your Gmail or Gmail asscociated account [here](http://www.cvdfoundation.org/datasets/open-images-dataset/signup.html) to request access. After you submit the request form, we will grant READ access to your mail account for the storage bucket:
 ```
 gs://open-images-dataset
 ```
 You can either download the images to a storage bucket or a local directory with the following procedures:
 1. install [gsutil](https://cloud.google.com/storage/docs/gsutil)
 2. gcloud auth login [your_mail_account]
-3. gsutil -m rsync -r gs://open-images-dataset/train [target_dir/train] (467GB)  
+3. gsutil -m rsync -r gs://open-images-dataset/train [target_dir/train] (513GB)  
  gsutil -m rsync -r gs://open-images-dataset/validation [target_dir/validation] (12GB)  
  gsutil -m rsync -r gs://open-images-dataset/test [target_dir/test] (36GB)           
    
