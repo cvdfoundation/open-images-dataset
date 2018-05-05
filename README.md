@@ -6,7 +6,7 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 ## Download Images With Bounding Boxes Annotations
 **Prerequisite: Gmail or Gmail associated account**
 
-CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory or a [Google Cloud storage bucket](https://cloud.google.com/storage/transfer/create-manage-transfer-console). Please sign up with your Gmail or Gmail asscociated account [here](http://www.cvdfoundation.org/datasets/open-images-dataset/signup.html) to request access. After you submit the request form, you can access the cloud storage bucket:
+CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory or a [Google Cloud storage bucket](https://cloud.google.com/storage/transfer/create-manage-transfer-console). Please sign up with your Gmail or Gmail associated account [here](http://www.cvdfoundation.org/datasets/open-images-dataset/signup.html) to request access. After you submit the request form, you can access the cloud storage bucket:
 ```
 gs://open-images-dataset
 ```
