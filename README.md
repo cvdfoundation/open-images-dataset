@@ -15,8 +15,8 @@ You can either download the images to a storage bucket or a local directory with
 2. gcloud auth login [your_mail_account]
 3. gsutil -m rsync -r gs://open-images-dataset/train [target_dir/train] (513GB)  
  gsutil -m rsync -r gs://open-images-dataset/validation [target_dir/validation] (12GB)  
- gsutil -m rsync -r gs://open-images-dataset/test [target_dir/test] (36GB)           
-   
+ gsutil -m rsync -r gs://open-images-dataset/test [target_dir/test] (36GB)          
+
 The target_dir can be a local directory or a Google Cloud storage bucket.
 
 ## Download Full Dataset With Google Storage Transfer
@@ -26,12 +26,20 @@ In this section, we describe the procedures to download all images in the Open I
 
 Google Storage provides a "storage transfer" function to transfer online files into a storage bucket. This function can be used to transfer images from original urls into user's storage bucket. CVDF prepares the tsv files that contain all image urls in Open Images Dataset for the transfer. The step-by-step instructions are described in [Creating and Managing Transfers with the Console](https://cloud.google.com/storage/transfer/create-manage-transfer-console). The size of the whole dataset is around 18TB. Please note that user needs to pay for hosting the dataset on Google Cloud storage after downloading it. The hosting price can be found on [Google Cloud Storage Pricing](https://cloud.google.com/storage/pricing).
 
-The tsv file for the train set (partitioned into 10 files):  
-https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train[0-9].tsv
+The tsv files for the train set, in 10 partitions:  
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train0.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train1.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train2.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train3.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train4.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train5.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train6.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train7.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train8.tsv<br>
+https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-train9.tsv<br>
 
 The tsv file for the validation set:  
 https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-validation.tsv
 
 The tsv file for the test set:  
 https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-test.tsv
-
