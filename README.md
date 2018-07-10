@@ -46,4 +46,3 @@ https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-validation.
 The tsv file for the test set:  
 https://storage.googleapis.com/cvdf-datasets/oid/open-images-dataset-test.tsv
 
-The tsv file for the Challenge 2018 test set will be available before the 6th of June.
