@@ -6,20 +6,19 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 ## Download Images With Bounding Boxes Annotations
 **Prerequisite: Gmail or Gmail associated account**
 
-CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. There is also a Open Images Challenge 2018 test set, which is completely disjoint from the other three sets. All images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory or a [Google Cloud storage bucket](https://cloud.google.com/storage/transfer/create-manage-transfer-console). Please sign up with your Gmail or Gmail associated account [here](http://www.cvdfoundation.org/datasets/open-images-dataset/signup.html) to request access. After you submit the request form, you can access the cloud storage bucket:
+CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. There is also a Open Images Challenge 2018 test set, which is completely disjoint from the other three sets. All images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory from the AWS S3 cloud storage bucket:
 ```
-gs://open-images-dataset
+s3://open-images-dataset
 ```
 You can either download the images to a storage bucket or a local directory with the following procedures:
-1. install [gsutil](https://cloud.google.com/storage/docs/gsutil)
-2. gcloud auth login [your_mail_account]
-3. download images for the train set, validation set, test set, and the Challenge 2018 test set (please note that the images in the Challenge 2018 test set are completely disjoint from the images in the other sets):
-  * gsutil -m rsync -r gs://open-images-dataset/train [target_dir/train] (513GB)  
-  * gsutil -m rsync -r gs://open-images-dataset/validation [target_dir/validation] (12GB)  
-  * gsutil -m rsync -r gs://open-images-dataset/test [target_dir/test] (36GB)
-  * gsutil -m rsync -r gs://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
+1. install [awscli](https://aws.amazon.com/cli/)
+2. download images for the train set, validation set, test set, and the Challenge 2018 test set (please note that the images in the Challenge 2018 test set are completely disjoint from the images in the other sets):
+  * aws s3 sync s3://open-images-dataset/train [target_dir/train] (513GB)  
+  * aws s3 sync s3://open-images-dataset/validation [target_dir/validation] (12GB)  
+  * aws s3 sync s3://open-images-dataset/test [target_dir/test] (36GB)
+  * aws s3 sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
 
-The target_dir can be a local directory or a Google Cloud storage bucket.
+The target_dir can be a local directory or a cluod storage bucket.
 
 ## Download Full Dataset With Google Storage Transfer
 **Prerequisite: Google Cloud Platform account**
