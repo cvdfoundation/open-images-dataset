@@ -12,10 +12,10 @@ s3://open-images-dataset
 You can either download the images to a storage bucket or a local directory with the following procedures:
 1. install [awscli](https://aws.amazon.com/cli/)
 2. download images for the train set, validation set, test set, and the Challenge 2018 test set (please note that the images in the Challenge 2018 test set are completely disjoint from the images in the other sets):
-  * aws s3 sync s3://open-images-dataset/train [target_dir/train] (513GB)  
-  * aws s3 sync s3://open-images-dataset/validation [target_dir/validation] (12GB)  
-  * aws s3 sync s3://open-images-dataset/test [target_dir/test] (36GB)
-  * aws s3 sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
+  * aws s3 --no-sign-request sync s3://open-images-dataset/train [target_dir/train] (513GB)  
+  * aws s3 --no-sign-request sync s3://open-images-dataset/validation [target_dir/validation] (12GB)  
+  * aws s3 --no-sign-request sync s3://open-images-dataset/test [target_dir/test] (36GB)
+  * aws s3 --no-sign-request sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
 
 The target_dir can be a local directory or a cluod storage bucket.
 
