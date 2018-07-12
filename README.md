@@ -5,7 +5,7 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 
 ## Download Images With Bounding Boxes Annotations
 
-CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. All images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory from the AWS S3 cloud storage bucket:
+CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The images are rescaled to have at most 1024 pixels on their longest side, while preserving their original aspect-ratio. The total size is 561GB. The images can be directly downloaded into a local directory from the AWS S3 cloud storage bucket:
 ```
 s3://open-images-dataset
 ```
