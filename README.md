@@ -5,11 +5,11 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 
 ## Download Images With Bounding Boxes Annotations
 
-CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The images are rescaled to have at most 1024 pixels on their longest side, while preserving their original aspect-ratio. The total size is 561GB. The images can be directly downloaded into a local directory from the AWS S3 cloud storage bucket:
+CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The images are rescaled to have at most 1024 pixels on their longest side, while preserving their original aspect-ratio. The total size is 561GB. The images can be directly downloaded into a local directory from the CVDF AWS S3 cloud storage bucket:
 ```
 s3://open-images-dataset
 ```
-You can either download the images to a storage bucket or a local directory with the following procedures:
+You can either download the images to a local directory or to your own AWS S3 cloud storage bucket with the following procedures:
 1. install [awscli](https://aws.amazon.com/cli/)
 2. download images for the train set, validation set, test set:
   * aws s3 --no-sign-request sync s3://open-images-dataset/train [target_dir/train] (513GB)  
@@ -17,7 +17,8 @@ You can either download the images to a storage bucket or a local directory with
   * aws s3 --no-sign-request sync s3://open-images-dataset/test [target_dir/test] (36GB)
 
 
-The target_dir can be a local directory or a cloud storage bucket.
+The target_dir can be a local directory or a AWS S3 cloud storage bucket.
+
 
 ## Download the Open Images Challenge 2018 test set
 
