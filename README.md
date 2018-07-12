@@ -5,19 +5,26 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 
 ## Download Images With Bounding Boxes Annotations
 
-CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. There is also a Open Images Challenge 2018 test set, which is completely disjoint from the other three sets. All images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory from the AWS S3 cloud storage bucket:
+CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. All images are rescaled to 1024x768 resolution with total size 561GB. The images can be directly downloaded into a local directory from the AWS S3 cloud storage bucket:
 ```
 s3://open-images-dataset
 ```
 You can either download the images to a storage bucket or a local directory with the following procedures:
 1. install [awscli](https://aws.amazon.com/cli/)
-2. download images for the train set, validation set, test set, and the Challenge 2018 test set (please note that the images in the Challenge 2018 test set are completely disjoint from the images in the other sets):
+2. download images for the train set, validation set, test set:
   * aws s3 --no-sign-request sync s3://open-images-dataset/train [target_dir/train] (513GB)  
   * aws s3 --no-sign-request sync s3://open-images-dataset/validation [target_dir/validation] (12GB)  
   * aws s3 --no-sign-request sync s3://open-images-dataset/test [target_dir/test] (36GB)
-  * aws s3 --no-sign-request sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
+
 
 The target_dir can be a local directory or a cloud storage bucket.
+
+## Download the Open Images Challenge 2018 test set
+
+CVDF also hosts the Open Images Challenge 2018 test set, which is disjoint from the Open Images V4 train, val, and test sets. The same AWS instructions above apply.
+
+  * aws s3 --no-sign-request sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
+  
 
 ## Download Full Dataset With Google Storage Transfer
 **Prerequisite: Google Cloud Platform account**
