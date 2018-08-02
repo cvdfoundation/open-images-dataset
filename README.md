@@ -16,6 +16,27 @@ You can either download the images to a local directory or to your own AWS S3 cl
   * aws s3 --no-sign-request sync s3://open-images-dataset/train [target_dir/train] (513GB)  
   * aws s3 --no-sign-request sync s3://open-images-dataset/validation [target_dir/validation] (12GB)  
   * aws s3 --no-sign-request sync s3://open-images-dataset/test [target_dir/test] (36GB)
+  
+  We also provide the zipped files set. You can download each zipped file using
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_0.tar.gz [target_dir] (46G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_1.tar.gz [target_dir] (34G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_2.tar.gz [target_dir] (33G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_3.tar.gz [target_dir] (32G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_4.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_5.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_6.tar.gz [target_dir] (32G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_7.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_8.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_9.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_a.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_b.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_c.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_d.tar.gz [target_dir] (31G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_e.tar.gz [target_dir] (28G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_f.tar.gz [target_dir] (28G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/validation.tar.gz [target_dir] (12G)
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/test.tar.gz [target_dir] (36G)
+
 
 
 The target_dir can be a local directory or a AWS S3 cloud storage bucket.
@@ -26,6 +47,9 @@ The target_dir can be a local directory or a AWS S3 cloud storage bucket.
 CVDF also hosts the Open Images Challenge 2018 test set, which is disjoint from the Open Images V4 train, val, and test sets. The same AWS instructions above apply.
 
   * aws s3 --no-sign-request sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
+
+  We also provide the zipped file for challenge 2018 set. You can download the zipped file using
+  * aws s3 --no-sign-request cp s3://open-images-dataset/tar/challenge2018.tar.gz [target_dir] (9.7G)
   
 
 ## Download Full Dataset With Google Storage Transfer
