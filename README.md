@@ -17,7 +17,7 @@ You can either download the images to a local directory or to your own AWS S3 cl
   * aws s3 --no-sign-request sync s3://open-images-dataset/validation [target_dir/validation] (12GB)  
   * aws s3 --no-sign-request sync s3://open-images-dataset/test [target_dir/test] (36GB)
   
-  We also provide the zipped files set. You can download each zipped file using
+Alternatively, you can download the subsets in separate packed files (the subset train_x contains all images with ID starting with x):
   * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_0.tar.gz [target_dir] (46G)
   * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_1.tar.gz [target_dir] (34G)
   * aws s3 --no-sign-request cp s3://open-images-dataset/tar/train_2.tar.gz [target_dir] (33G)
