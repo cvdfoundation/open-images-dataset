@@ -5,7 +5,7 @@ Open Images is a dataset of ~9 million URLs to images that have been annotated w
 
 ## Download Images With Bounding Boxes Annotations
 
-CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The train set is also used in the Open Images Challenge 2018.
+CVDF hosts image files that have bounding boxes annotations in the Open Images Dataset V4. The images are split into train (1,743,042), validation (41,620), and test (125,436) sets. The train set is also used in the Open Images Challenge 2018 and 2019.
 The images are rescaled to have at most 1024 pixels on their longest side, while preserving their original aspect-ratio. The total size is 561GB. The images can be directly downloaded into a local directory from the CVDF AWS S3 cloud storage bucket:
 ```
 s3://open-images-dataset
@@ -42,13 +42,13 @@ Alternatively, you can download the subsets in separate packed files (the subset
 The target_dir can be a local directory or a AWS S3 cloud storage bucket.
 
 
-## Download the Open Images Challenge 2018 test set
+## Download the Open Images Challenge 2818/2019 test set
 
-CVDF also hosts the Open Images Challenge 2018 test set, which is disjoint from the Open Images V4 train, val, and test sets. The same AWS instructions above apply.
+CVDF also hosts the Open Images Challenge 2018/2019 test set, which is disjoint from the Open Images V4 train, val, and test sets. The same AWS instructions above apply. Note that since the images from the 2019 challenge have not changed, the filenames only include the year 2018.
 
   * aws s3 --no-sign-request sync s3://open-images-dataset/challenge2018 [target_dir/test_challenge_2018] (10GB)
 
-  We also provide the zipped file for challenge 2018 set. You can download the zipped file using
+  We also provide the zipped file for challenge 2018/2019 set. You can download the zipped file using
   * aws s3 --no-sign-request cp s3://open-images-dataset/tar/challenge2018.tar.gz [target_dir] (9.7G)
   
 
