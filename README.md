@@ -42,7 +42,7 @@ Alternatively, you can download the subsets in separate packed files (the subset
 The target_dir can be a local directory or a AWS S3 cloud storage bucket.
 
 
-## Download the Open Images Challenge 2818/2019 test set
+## Download the Open Images Challenge 2018/2019 test set
 
 CVDF also hosts the Open Images Challenge 2018/2019 test set, which is disjoint from the Open Images V4/V5 train, val, and test sets. The same AWS instructions above apply. Note that since the images from the 2019 challenge have not changed, the filenames only include the year 2018.
 
